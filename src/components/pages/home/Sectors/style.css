@@ -1,0 +1,42 @@
+.bgimg {
+  background-image: url("../../../../assets/Home/HomePage-SectorBgs/05.webp");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg2 {
+  background-image: url("../../../../assets/Home/HomePage-SectorBgs/02.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg3 {
+  background-image: url("../../../../assets/Home/HomePage-SectorBgs/01.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg4 {
+  background-image: url("../../../../assets/Home/HomePage-SectorBgs/03.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg5 {
+  background-image: url("../../../../assets/Home/HomePage-SectorBgs/07.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg6 {
+  background-image: url("../../../../assets/Home/HomePage-SectorBgs/08.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg7 {
+  background-image: url("../../../../assets/Home/HomePage-SectorBgs/06.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

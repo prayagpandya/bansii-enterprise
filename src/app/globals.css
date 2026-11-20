@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: var(--font-roboto), "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffffff;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+nav {
+  letter-spacing: 1px;
+}
+body {
+  font-family: var(--font-roboto), "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  overflow-x: hidden;
+}
+.Toastify__toast-body > div:last-child {
+  background-color: transparent;
+}
+.Toastify__toast-body {
+  background-color: transparent;
+}
+.cardDes {
+  position: relative;
+}
+
+.cardDes::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 68px; /* Adjust the height as needed */
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  pointer-events: none; /* Ensure it doesn't interfere with clicks */
+}
+
+.cardDesNo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 110px; /* Adjust the height as needed */
+  background: transparent;
+  pointer-events: none; /* Ensure it doesn't interfere with clicks */
+}

@@ -1,0 +1,49 @@
+{
+  "Services": [
+    {
+      "image": "@/assets/Services/integreted management system/01.webp",
+      "title": "Manual/Mechanised and Robotic Cleaning",
+      "description": "In response to the continually changing hygiene requirements of our urbanized society, mechanized cleaning and maintenance have become crucial facilities. This method minimizes manual labor and effort, ensuring comprehensive cleanliness through the incorporation of intelligent technology. Bansi Enterprise India provides advanced housekeeping and maintenance services to a diverse range of facilities, including commercial complexes, IT parks, hospitals, educational institutions, government offices, hotels, railway stations, roads, malls, and more."
+    },
+    {
+      "image": "@/assets/Services/integreted management system/02.webp",
+      "title": "Sanitization Solutions",
+      "description": "Maintaining clinical hygiene is of paramount significance to ensure the well-being and safety of patients, staff, and visitors. Recognizing this imperative, Bansi Enterprise India extends its cleaning services to hospitals of diverse scales throughout India. Our approach involves deploying trained and qualified cleaning professionals, utilizing sound-free cleaning equipment, and employing safe cleaning solutions. This meticulous process ensures elevated standards of sanitation and hygiene within healthcare facilities."
+    },
+    {
+      "image": "@/assets/Services/integreted management system/04.webp",
+      "title": "Guest Services",
+      "description": "For your guest and employee service needs, Bansi Enterprise India offers the provision of professional attendants. Tailored to your requirements, we provide trained, courteous, and polite attendants, allowing you to scale the team as needed."
+    },
+    {
+      "image": "@/assets/Services/integreted management system/06.webp",
+      "title": "Shop Floor Sanitation Services",
+      "description": "For various government organizations, corporate manufacturing, and service companies across sectors like IT, retail, and manufacturing, Bansi Enterprise India offers shop floor cleaning services. Our project managers strategically schedule shop floor cleaning days, and our expertly trained team ensures strict adherence to these timetables, consistently upholding the hygiene standards of the shops."
+    },
+    {
+      "image": "@/assets/Services/integreted management system/07.webp",
+      "title": "Facility Technical Support",
+      "description": "Bansi Enterprise India boasts a dedicated and well-trained team of qualified individuals specializing in technical services. We take on the comprehensive management of facility assets, including Mechanical, Electrical, plumbing, HVAC, Electrical Systems, Fire control, Firefighting, Critical Engineering, Access Control, CCTV, Utilities, and Infrastructure, offering planned preventive and corrective maintenance support."
+    },
+    {
+      "image": "@/assets/Services/integreted management system/08.webp",
+      "title": "Religious Establishment Management",
+      "description": "Temples, integral to our country's spiritual fabric, require meticulous upkeep, and Bansi Enterprise India takes pride in fulfilling this rightful duty. We provide high-quality cleaning instruments for maintaining the cleanliness of temple premises and surroundings. Our Temple maintenance services create a clean and hygienic environment, fostering an atmosphere for devotees to worship with peace of mind."
+    },
+    {
+      "image": "@/assets/Services/integreted management system/09.webp",
+      "title": "Holistic Facility Management Solutions",
+      "description": "Eliminate the complexity of dealing with multiple vendors for various facility management services by choosing Bansi Enterprise India's Integrated Facility Management. This comprehensive service provides access to all facilities under a unified management team, offering cost savings, reduced vendor management efforts, and a complete range of facility management services."
+    },
+    {
+      "image": "@/assets/Services/integreted management system/10.webp",
+      "title": "Road Sweeping and Sanitation Services",
+      "description": "Well-maintained roads not only reflect the cleanliness of a country but also showcase the progressive mindset of its citizens. Bansi Enterprise India is dedicated to upholding road hygiene, providing qualified teams for road sweeping and cleaning to municipal corporations, councils, and large manufacturing campuses across India. Our utilization of mechanized equipment ensures thorough and extensive cleaning of the roads."
+    },
+    {
+      "image": "@/assets/Services/integreted management system/11.webp",
+      "title": "Comprehensive Pest Control Solutions",
+      "description": "Creating a pest-free environment is essential to prevent the uncontrolled growth of insects and rodents, addressing potential health concerns. Bansi Enterprise India offers Pest Control services that employ eco-friendly pest control, fumigation, and sterilization techniques, ensuring the safety and hygiene of both residential and commercial spaces."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+.scroll-container {
+  overflow: hidden;
+  width: 85%;
+  padding: 16px;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+  position: relative; /* Ensure the scrolling happens within this container */
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll 45s linear infinite;
+  background-color: transparent;
+  /* Ensure the width is enough to accommodate all duplicated items smoothly */
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  width: 33.33%;
+  padding: 16px;
+  box-sizing: border-box;
+  text-align: justify;
+  background-color: transparent;
+}
+
+.year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.description {
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+/* Infinite scroll keyframes */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Adjust this to half the total width */
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .scroll-item {
+    width: 50%; /* Two items in view */
+  }
+
+  .year {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-item {
+    width: 100%; /* One item in view */
+  }
+
+  .year {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+}

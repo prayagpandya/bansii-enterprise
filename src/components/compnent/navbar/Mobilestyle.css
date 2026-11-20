@@ -1,0 +1,85 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+/* .hamburger-button {
+  position: relative;
+  right: 1rem;
+  top: -20px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+} */
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.submenu {
+  list-style: none;
+  padding: 0 0 0 1rem;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+}
+.submenu-button {
+  background: none;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.close-icon {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.close-icon:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.close-icon:nth-child(2) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+.open .line {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.open .close-icon {
+  opacity: 1;
+}
+
+.open .close-icon:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.open .close-icon:nth-child(2) {
+  transform: rotate(-45deg);
+}

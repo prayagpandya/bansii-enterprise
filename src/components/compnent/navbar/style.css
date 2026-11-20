@@ -1,0 +1,170 @@
+/* Display the menu when hovering over the title or the menu itself */
+.About-Menu-Title:hover + .About-Menu,
+.About-Menu:hover {
+  display: block;
+  z-index: 20;
+}
+
+/* Style the title on hover */
+.About-Menu-Title:hover {
+  cursor: pointer;
+}
+
+.About-Menu-Title {
+  position: relative;
+}
+
+.About-Menu {
+  z-index: 20;
+  padding: 20px;
+  background-color: #edf7fb;
+  row-gap: 10px;
+  position: absolute;
+  display: none;
+}
+
+/* Display the menu when hovering over the title or the menu itself */
+.Env-Menu-Title:hover + .Env-Menu,
+.Env-Menu:hover {
+  background-color: #edf7fb;
+  display: block;
+}
+
+/* Style the title on hover */
+.Env-Menu-Title:hover {
+  z-index: 20;
+  color: #0b2f6a;
+  cursor: pointer;
+}
+
+.Env-Menu-Title {
+  z-index: 20;
+  position: relative;
+}
+
+.Env-Menu {
+  z-index: 20;
+  background-color: #edf7fb;
+  border-radius: 10px;
+  row-gap: 10px;
+  left: 100%;
+  bottom: 20%;
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+
+.menutitle:hover + .menu,
+.menu:hover {
+  z-index: 20;
+  display: block;
+}
+.menu {
+  z-index: 20;
+  display: hidden;
+}
+
+.hover-underline-animation {
+  /* color: white; */
+  padding: 10px 16px;
+  position: relative;
+  border-radius: 5px;
+}
+.hover-underline-animation:hover {
+  cursor: pointer;
+  color: #edf7fb;
+}
+
+.hover-underline-animation::before {
+  content: ""; /* Add a pseudo-element */
+  position: absolute; /* Position the pseudo-element */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire width of the parent */
+  height: 100%; /* Cover the entire height of the parent */
+  background: #0d9cd4; /* Set the background color */
+  z-index: -1; /* Push the pseudo-element behind the content */
+  transform: scaleX(0); /* Initially hide the pseudo-element */
+  transform-origin: right; /* Set the transform origin to the left */
+  transition: transform 0.25s ease-out; /* Apply transition effect */
+}
+
+.hover-underline-animation:hover::before {
+  transform: scaleX(1); /* Expand the pseudo-element on hover */
+  transform-origin: left; /* Set the transform origin to the right */
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #0b2e71;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-title {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  /* color: white; */
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.menu-content {
+  position: absolute;
+  width: 300px;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 0.5rem 0;
+}
+.menu-item:hover a {
+  color: white;
+}
+.menu-item a {
+  color: #0b2e71;
+  text-decoration: none;
+}
+
+.menu-title:hover .material-symbols-outlined {
+  animation: rotate 0.7s forwards;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

@@ -1,58 +1,26 @@
 import React from "react";
 import BlogPost from "@/components/pages/Resources/blogs/dynablogPage";
+import Footer from "@/components/compnent/Footer/Footer";
 import imgUrl from "@/assets/Blogs/Dyna/02.webp";
-import Image from "next/image";
+
 const page = () => {
   return (
-    <div className="flex flex-wrap justify-between">
-      <div className="w-full md:w-8/12 px-4 mb-8">
-        <Image
-          src={imgUrl}
-          alt="Featured Image"
-          className="w-full h-fit object-cover rounded"
-        />
-        <h2 className="text-4xl font-bold mt-4 mb-2">My First Blog Post</h2>
-        <p className="text-gray-700 mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <p className="text-gray-700 mb-4">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
-        </p>
-        <p className="text-gray-700 mb-4">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo.
-        </p>
-      </div>
-      <div className="w-full md:w-4/12 px-4 mb-8">
-        <div className="bg-gray-100 px-4 py-6 rounded">
-          <h3 className="text-lg font-bold mb-2">Categories</h3>
-          <ul className="list-disc list-inside">
-            <li>
-              <a href="#" className="text-gray-700 hover:text-gray-900">
-                Technology
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-gray-900">
-                Travel
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-gray-700 hover:text-gray-900">
-                Food
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div className="pt-28 overflow-x-clip">
+      <BlogPost
+        imageUrl={imgUrl}
+        title="Innovations in Environmental Services: Leading the Way to a Greener Future"
+        paragraphs={[
+          "Responsible solid waste, e-waste, and coastal cleanliness management require dedicated field execution backed by sustainable collection and segregation workflows.",
+          "From municipal road sweeping and tourism beach cleaning to horticultural land development and waste disposal, Bansi Enterprise deploys trained teams and mechanized equipment designed for high-traffic public spaces.",
+          "Consistent environmental stewardship not only keeps public venues welcoming, but also reduces ecological footprint and supports cleaner urban and institutional communities.",
+        ]}
+        categories={[
+          "Environmental Services",
+          "Waste Management",
+          "Horticulture",
+        ]}
+      />
+      <Footer />
     </div>
   );
 };

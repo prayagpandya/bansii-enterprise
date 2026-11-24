@@ -1,38 +1,40 @@
 import Image from "next/image";
 import React from "react";
 
-const Awards2 = ({ img, Title, Disc, customClass }) => {
+const Awards2 = ({ img, Title, Disc, customClass = "" }) => {
   return (
-    <div className={`${customClass} w-full border border-[#112C76] `}>
-      <div className="lg:w-1/3 w-1/2 bg-transparent">
+    <article
+      className={`w-full flex flex-col sm:flex-row items-center gap-6 ${customClass}`}
+    >
+      <div className="w-32 sm:w-36 shrink-0 flex items-center justify-center bg-slate-50 rounded-xl p-3 border border-slate-100">
         <Image
           src={img}
           alt={Title}
-          width={300}
-          height={300}
-          className="rounded-lg object-contain mix-blend-multiply"
+          width={180}
+          height={180}
+          className="w-full h-auto object-contain rounded-lg"
         />
       </div>
-      <div className=" bg-transparent  mt-4 md:mt-0 md:pl-8 text-center md:text-left">
-        <h2 className="text-base lg:text-xl xl:text-2xl font-bold mb-4 bg-transparent">
+      <div className="flex-1 text-center sm:text-left space-y-2.5">
+        <h2 className="text-lg lg:text-xl font-bold text-[#0E2E71] leading-snug">
           {Title}
         </h2>
         {Array.isArray(Disc) ? (
           Disc.map((item, index) => (
             <p
               key={index}
-              className="text-sm lg:text-lg xl:text-xl mb-2 bg-transparent"
+              className="text-sm lg:text-base text-slate-600 leading-relaxed"
             >
               {item}
             </p>
           ))
         ) : (
-          <p className="text-sm lg:text-base xl:text-xl text-gray-500 bg-transparent">
+          <p className="text-sm lg:text-base text-slate-600 leading-relaxed text-justify sm:text-left">
             {Disc}
           </p>
         )}
       </div>
-    </div>
+    </article>
   );
 };
 

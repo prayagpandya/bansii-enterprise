@@ -1,12 +1,8 @@
-const Events = lazy(() => import("@/components/pages/Resources/events/Events"));
-import React, { lazy } from "react";
+import React from "react";
+import Events from "@/components/pages/Resources/events/Events";
 
 const page = () => {
-  return (
-    <>
-      <Events />
-    </>
-  );
+  return <Events />;
 };
 
 export default page;

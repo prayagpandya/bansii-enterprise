@@ -3,28 +3,34 @@ import React from "react";
 
 const Whitepapers = () => {
   return (
-    <div className="w-full px-40 space-y-8 mt-40">
-      <p>Industry Trends Driving the Future of Facilities Management in 2024</p>
-      <p>
-        As we kick off 2024, the FM industry will undergo some exciting changes
-        that will shape how customers will manage and maintain their buildings.
-        From the rise of smart technology to the increasing emphasis on
-        sustainability, the coming years promise to be a period of
-        transformation for facility management professionals.{" "}
-      </p>
-      <p>
-        In this report, we will highlight 5 key trends that will shape the FM
-        industry in 2024.
-      </p>
-      <button>
-        <Link
-          href="/whitepapers"
-          className="bgwhite hover:bg-blue-700 text-blue-700 border border-blue-700 hover:border-white  font-bold py-4 px-6 rounded hover:text-white  "
-        >
-          Download Report
-        </Link>
-      </button>
-    </div>
+    <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-20 space-y-6">
+      <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-10 shadow-sm space-y-5">
+        <span className="inline-block text-xs sm:text-sm font-bold uppercase tracking-widest text-[#0d9cd4]">
+          Research &amp; Reports
+        </span>
+        <h1 className="text-2xl sm:text-3xl font-bold text-[#0E2E71]">
+          Industry Trends Driving the Future of Facilities Management
+        </h1>
+        <p className="text-base text-slate-600 leading-relaxed text-justify">
+          Facilities management continues to evolve rapidly as institutions
+          adopt mechanized cleaning, sustainable waste workflows, digital
+          monitoring, and structured safety compliance across workplaces and
+          public infrastructure.
+        </p>
+        <p className="text-base text-slate-600 leading-relaxed text-justify">
+          Bansi Enterprise remains focused on workforce training, disciplined
+          supervision, and responsive on-ground service delivery across India.
+        </p>
+        <div className="pt-2">
+          <Link
+            href="/contactus"
+            className="inline-flex items-center px-6 py-3 bg-[#0E2E71] hover:bg-[#0d9cd4] text-white font-semibold rounded-lg transition-colors"
+          >
+            Request More Information
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 };
 

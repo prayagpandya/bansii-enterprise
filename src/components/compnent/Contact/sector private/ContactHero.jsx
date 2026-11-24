@@ -1,20 +1,23 @@
 import React from "react";
 
-const ContactHero = ({ img, title, classnameContainer }) => {
+const ContactHero = ({ img, title, classnameContainer = "" }) => {
   return (
-    <>
-      <div className="relative h-[35vh] z-0">
-        <div
-          className={`absolute top-0 bg-bottom left-0 w-full h-[100%] md:bg-top ${classnameContainer}`}
-          style={{ backgroundImage: `url(${img.src})` }}
-        ></div>
-        <div className=" absolute flex justify-center items-center z-10 bg-transparent w-full h-full">
-          <h1 className="bg-transparent text-white tracking-wider text-center text-3xl lg:text-4xl xl:text-5xl font-bold px-20 mt-14">
-            {title}
-          </h1>
-        </div>
+    <section className="relative w-full min-h-[300px] md:min-h-[380px] flex items-center justify-center pt-32 pb-10 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#0E2E71]">
+      <div
+        className={`absolute inset-0 bg-cover bg-center md:bg-top ${classnameContainer}`}
+        style={{ backgroundImage: `url(${img.src})` }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-0 bg-[#0E2E71]/65"
+        aria-hidden="true"
+      />
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
+        <h1 className="text-white tracking-wide text-3xl sm:text-4xl lg:text-5xl font-bold">
+          {title}
+        </h1>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -2,25 +2,27 @@ import React from "react";
 
 const SectorHero = ({ img, title, description }) => {
   return (
-    <>
-      <div className="relative h-[80vh]">
-        <div
-          className="absolute top-0 left-0 w-full h-[80%] bg-cover bg-center md:bg-top"
-          style={{
-            backgroundImage: `url(${img.src})`,
-            backgroundSize: "cover",
-          }}
-        ></div>
-        <div className="absolute z-[8] bg-[#ffffffe0]  md:space-y-4 md:p-6 md:pb-12 lg:p-8 lg:pb-14 xl:p-10 xl:pb-16 md:w-2/5 h-fit md:left-20 xl:top-32 lg:top-24 md:top-24  px-8 py-10 top-[13%] w-[90%] md:mx-0 md:my-0 mx-4 my-8">
-          <p className="bg-transparent -ml-3 -mt-3 md:mt-0 md:ml-0 text-2xl mb-4 font-bold  lg:text-3xl text-[#0b2f6a]">
+    <section className="relative w-full min-h-[58vh] md:min-h-[66vh] flex items-center pt-32 pb-14 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#0E2E71]">
+      <div
+        className="absolute inset-0 bg-cover bg-center md:bg-top"
+        style={{ backgroundImage: `url(${img.src})` }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-0 bg-gradient-to-r from-[#0E2E71]/75 via-[#0E2E71]/45 to-black/25"
+        aria-hidden="true"
+      />
+      <div className="relative z-10 max-w-7xl mx-auto w-full">
+        <div className="max-w-xl bg-white/95 rounded-2xl p-6 sm:p-8 lg:p-10 shadow-xl border border-white/60 space-y-4">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0b2f6a] leading-tight">
             {title}
-          </p>
-          <p className="bg-transparent xl:text-xl md:text-justify -ml-4 md:ml-0 ">
+          </h1>
+          <p className="text-sm sm:text-base lg:text-lg text-slate-600 text-justify leading-relaxed">
             {description}
           </p>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

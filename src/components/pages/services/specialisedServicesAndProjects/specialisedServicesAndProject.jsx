@@ -1,113 +1,85 @@
 import GridCards from "@/components/compnent/GridCards/GridCards";
 import SectorHero from "@/components/compnent/dynamiSectorhero/SectorHero";
 import React from "react";
-import s1 from "@/assets/Services/civilHorticulture/01.webp";
-import s2 from "@/assets/Services/civilHorticulture/02.webp";
-import s3 from "@/assets/Services/civilHorticulture/03.webp";
-import s4 from "@/assets/Services/civilHorticulture/04.webp";
-import s5 from "@/assets/Services/civilHorticulture/05.webp";
-import s6 from "@/assets/Services/civilHorticulture/06.webp";
-import s7 from "@/assets/Services/civilHorticulture/07.webp";
-import s8 from "@/assets/Services/civilHorticulture/08.webp";
-import s9 from "@/assets/Services/civilHorticulture/09.webp";
-import s10 from "@/assets/Services/civilHorticulture/10.webp";
+import heroImg from "@/assets/Services/s3.webp";
+import eWasteImg from "@/assets/Services/e-waste-garbage-management.webp";
+import horticultureImg from "@/assets/Services/horticulture-landscaping.webp";
+import roadBeachImg from "@/assets/Services/road-sweeping-beach-cleaning.webp";
+import manualsMachineryImg from "@/assets/Services/manuals-machinery.webp";
+import emergencyResponseImg from "@/assets/Services/emergency-response.webp";
+import sanitationImg from "@/assets/Services/sanitation.webp";
 
-import Contact from "@/components/compnent/Contact/ContactPage";
 import ScoreCard from "@/components/compnent/scorecard/ScoreCard";
 import Footer from "@/components/compnent/Footer/Footer";
 
 const SpecialisedServicesAndProjects = () => {
   const scoreCardData1 = [
-    { label: "Total Airports Served", value: "24+" },
-    { label: "Years of Experience", value: "9+" },
-    { label: "Sq.ft Area Managed", value: "8+ Lakhs" },
-    { label: "Manpower", value: "8000+" },
+    { label: "Employees", value: "2000+" },
+    { label: "Cities", value: "100+" },
+    { label: "Clients", value: "250+" },
+    { label: "Years", value: "25+" },
   ];
+
   const cardData = [
     {
-      image: s1,
+      image: eWasteImg,
+      title: "E-Waste / Garbage Management",
+      description:
+        "Efficient collection, segregation, and disposal of waste to maintain cleanliness.\nImplementation of sustainable waste reduction practices.\nRecycling initiatives for environmentally responsible waste management.",
+    },
+    {
+      image: roadBeachImg,
+      title: "Road Sweeping & Beach Cleaning",
+      description:
+        "Well-maintained roads not only reflect the cleanliness of a country but also showcase the progressive mindset of its citizens. Bansi Enterprise India is dedicated to upholding road hygiene, providing qualified teams for road sweeping and cleaning to municipal corporations, councils, and large manufacturing campuses across India. Our utilization of mechanized equipment ensures thorough and extensive cleaning of the roads.",
+    },
+    {
+      image: horticultureImg,
+      title: "Horticulture / Landscaping",
+      description:
+        "Bansi Enterprise’s horticulture and landscaping service is dedicated to creating and maintaining vibrant outdoor spaces that enhance the aesthetic appeal and functionality of our clients’ properties. Our team of skilled horticulturists and landscapers designs bespoke landscapes tailored to each client’s preferences and needs. From initial planning and installation to ongoing maintenance, we ensure that gardens, lawns, and green spaces thrive throughout the seasons.",
+    },
+    {
+      image: manualsMachineryImg,
       title: "Manual/Mechanised and Robotic Cleaning",
-      description: `In response to the continually changing hygiene requirements of our urbanized society, mechanized cleaning and maintenance have become crucial facilities. This method minimizes manual labor and effort, ensuring comprehensive cleanliness through the incorporation of intelligent technology. BVG India provides advanced housekeeping and maintenance services to a diverse range of facilities, including commercial complexes, IT parks, hospitals, educational institutions, government offices, hotels, railway stations, roads, malls, and more.`,
+      description:
+        "In response to the continually changing hygiene requirements of our urbanized society, mechanized cleaning and maintenance have become crucial facilities. This method minimizes manual labor and effort, ensuring comprehensive cleanliness through the incorporation of intelligent technology. Bansi Enterprise India provides advanced housekeeping and maintenance services to a diverse range of facilities, including commercial complexes, IT parks, hospitals, educational institutions, government offices, hotels, railway stations, roads, malls, and more.",
     },
     {
-      image: s2,
-      title: "Sanitization Solutions",
-      description: `Maintaining clinical hygiene is of paramount significance to ensure the well-being and safety of patients, staff, and visitors. Recognizing this imperative, BVG India extends its cleaning services to hospitals of diverse scales throughout India. Our approach involves deploying trained and qualified cleaning professionals, utilizing sound-free cleaning equipment, and employing safe cleaning solutions. This meticulous process ensures elevated standards of sanitation and hygiene within healthcare facilities.
-
-
-      `,
+      image: sanitationImg,
+      title: "Sanitation Services",
+      description:
+        "Our comprehensive approach includes thorough cleaning, disinfection, and waste management to ensure optimal sanitation standards. From regular cleaning schedules to specialized treatments, we tailor our services to meet the unique needs of each facility. With a focus on health and safety, Bansi Enterprise’s sanitation service provides peace of mind to our clients and promotes a healthier environment for all.",
     },
     {
-      image: s3,
-      title: "Parking Management",
-      description: `The transparency of glass panes and the appearance of building facades significantly contribute to the overall impression of any structure, attracting the attention of passers-by. Maintaining cleanliness not only enhances a company's reputation but also reflects its commitment to hygiene and presentation. BVG India takes pride in employing skilled personnel and high-quality cleaning equipment to ensure the pristine condition of your glass and facades, eliminating dust, dirt, and debris effectively.`,
-    },
-    {
-      image: s4,
-      title: "Manual/Mechanised and Robotic Cleaning",
-      description: `In response to the continually changing hygiene requirements of our urbanized society, mechanized cleaning and maintenance have become crucial facilities. This method minimizes manual labor and effort, ensuring comprehensive cleanliness through the incorporation of intelligent technology. BVG India provides advanced housekeeping and maintenance services to a diverse range of facilities, including commercial complexes, IT parks, hospitals, educational institutions, government offices, hotels, railway stations, roads, malls, and more.`,
-    },
-    {
-      image: s5,
-      title: "Sanitization Solutions",
-      description: `Maintaining clinical hygiene is of paramount significance to ensure the well-being and safety of patients, staff, and visitors. Recognizing this imperative, BVG India extends its cleaning services to hospitals of diverse scales throughout India. Our approach involves deploying trained and qualified cleaning professionals, utilizing sound-free cleaning equipment, and employing safe cleaning solutions. This meticulous process ensures elevated standards of sanitation and hygiene within healthcare facilities.
-  
-  
-        `,
-    },
-    {
-      image: s6,
-      title: "Parking Management",
-      description: `The transparency of glass panes and the appearance of building facades significantly contribute to the overall impression of any structure, attracting the attention of passers-by. Maintaining cleanliness not only enhances a company's reputation but also reflects its commitment to hygiene and presentation. BVG India takes pride in employing skilled personnel and high-quality cleaning equipment to ensure the pristine condition of your glass and facades, eliminating dust, dirt, and debris effectively.`,
-    },
-    {
-      image: s7,
-      title: "Manual/Mechanised and Robotic Cleaning",
-      description: `In response to the continually changing hygiene requirements of our urbanized society, mechanized cleaning and maintenance have become crucial facilities. This method minimizes manual labor and effort, ensuring comprehensive cleanliness through the incorporation of intelligent technology. BVG India provides advanced housekeeping and maintenance services to a diverse range of facilities, including commercial complexes, IT parks, hospitals, educational institutions, government offices, hotels, railway stations, roads, malls, and more.`,
-    },
-    {
-      image: s8,
-      title: "Sanitization Solutions",
-      description: `Maintaining clinical hygiene is of paramount significance to ensure the well-being and safety of patients, staff, and visitors. Recognizing this imperative, BVG India extends its cleaning services to hospitals of diverse scales throughout India. Our approach involves deploying trained and qualified cleaning professionals, utilizing sound-free cleaning equipment, and employing safe cleaning solutions. This meticulous process ensures elevated standards of sanitation and hygiene within healthcare facilities.
-  
-  
-        `,
-    },
-    {
-      image: s9,
-      title: "Parking Management",
-      description: `The transparency of glass panes and the appearance of building facades significantly contribute to the overall impression of any structure, attracting the attention of passers-by. Maintaining cleanliness not only enhances a company's reputation but also reflects its commitment to hygiene and presentation. BVG India takes pride in employing skilled personnel and high-quality cleaning equipment to ensure the pristine condition of your glass and facades, eliminating dust, dirt, and debris effectively.`,
-    },
-    {
-      image: s10,
-      title: "Parking Management",
-      description: `The transparency of glass panes and the appearance of building facades significantly contribute to the overall impression of any structure, attracting the attention of passers-by. Maintaining cleanliness not only enhances a company's reputation but also reflects its commitment to hygiene and presentation. BVG India takes pride in employing skilled personnel and high-quality cleaning equipment to ensure the pristine condition of your glass and facades, eliminating dust, dirt, and debris effectively.`,
+      image: emergencyResponseImg,
+      title: "Emergency Response — Fire / Lift / Technical",
+      description:
+        "Our team of trained professionals conducts thorough inspections, installs and maintains firefighting equipment, and develops comprehensive fire safety plans tailored to each facility’s unique needs. With a proactive approach to fire prevention and mitigation, we help minimize the impact of fire emergencies and protect lives and property.",
     },
   ];
+
   return (
-    <>
+    <div className="overflow-x-clip">
       <SectorHero
-        title="Civil & Horticulture"
-        img={require("@/assets/Services/s3.webp").default}
-        description="
-        A Civil Horticulture division is one of the prestigious department which includes land development, Residential Building , industrial construction, industrial piping, Landscape beautification, Lake beautification, Garden development and maintenance water supply Irrigation"
+        title="Waste Management & Specialised Projects"
+        img={heroImg}
+        description="Bansi Enterprise delivers sustainable e-waste and garbage management, coastal and road sweeping, horticulture development, and specialised field operations for government bodies and large campuses across India."
       />
-      <p className="text-xl px-4 text-justify lg:text-2xl lg:px-24">
-        At present we provide Civil Horticulture Services in Maharashtra, Gujrat
-        Assam Tripura. It includes Civil infrastructure residential building,
-        truck terminal, Landscape and Gardening development with Design and
-        Drawing. BVG has experience in Projects of several different Contractual
-        concepts including Engineering, Procurement Contracts i e EPC.
-      </p>
-
-      <div>
-        <GridCards cardData={cardData} />
-      </div>
-      {/* <Contact /> */}
-      <ScoreCard title="About People Places and Planet" data={scoreCardData1} />
-
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+        <p className="text-base sm:text-lg lg:text-xl text-slate-600 text-justify leading-relaxed bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+          Bansi Enterprise provides specialised environmental, municipal, and
+          campus project services across Gujarat, Maharashtra, Union Territories,
+          and NCR. Our dedicated field fleets and trained supervisors execute
+          door-to-door garbage collection, beach cleaning, large-scale
+          horticulture maintenance, and emergency technical readiness with
+          measurable service accountability.
+        </p>
+      </section>
+      <GridCards cardData={cardData} />
+      <ScoreCard title="About People, Places and Planet" data={scoreCardData1} />
       <Footer />
-    </>
+    </div>
   );
 };
 

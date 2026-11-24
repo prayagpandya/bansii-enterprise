@@ -1,17 +1,8 @@
-import React, { lazy } from "react";
-
-const IntegratedFacilityManagement = lazy(() =>
-  import(
-    "@/components/pages/services/Integrated Facility Management/Integrated Facility Management"
-  )
-);
+import React from "react";
+import IntegratedFacilityManagement from "@/components/pages/services/Integrated Facility Management/Integrated Facility Management";
 
 const page = () => {
-  return (
-    <>
-      <IntegratedFacilityManagement />
-    </>
-  );
+  return <IntegratedFacilityManagement />;
 };
 
 export default page;

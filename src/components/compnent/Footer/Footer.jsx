@@ -7,91 +7,107 @@ import { TbPhoneCall } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-[#0c2f73]">
-      <div className="container mx-auto py-6 px-4 lg:px-10">
-        <div className="flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row items-start lg:items-start mt-6 lg:justify-between gap-4">
-          <div className="flex flex-col items-center lg:items-start">
-            <div>
-              <Image src={logo} alt="Logo" width="100" height="100" />
-              <p className="text-3xl font-bold">Bansi Enterprise</p>
-              <p className="xl:max-w-xs lg:max-w-xl ">
-                Bansi Enterprise based in Gujarat. We offer unrivaled Manpower
-                Outsourcing Services, Mechanised Cleaning services
-                to public & private sectors in India.
-              </p>
-            </div>
+    <footer className="bg-slate-50 border-t border-slate-200 text-[#0c2f73]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
+          <div className="lg:col-span-4 space-y-4">
+            <Link href="/" className="inline-flex items-center gap-3.5">
+              <Image
+                src={logo}
+                alt="Bansi Enterprise Logo"
+                width={96}
+                height={96}
+                className="rounded-full object-contain w-24 h-24"
+              />
+              <span className="text-2xl font-bold text-[#0E2E71]">
+                Bansi Enterprise
+              </span>
+            </Link>
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed text-justify">
+              Bansi Enterprise is based in Gujarat, offering unrivaled Manpower
+              Outsourcing and Mechanised Cleaning Services to public &amp;
+              private sectors across India.
+            </p>
           </div>
-          <div className="flex flex-col justify-center gap-y-2">
-            <h4 className="font-bold text-2xl">Useful Links</h4>
-            <div className="max-w-2xl flex gap-10 text-sm">
-              <div className="flex flex-col gap-y-2 mt-4 lg:mt-0">
-                <Link href="/">Home</Link>
-                <Link href="/Services">Services</Link>
-                <Link href="/sectors/healthCareAndLifeServices">
-                  Health Care And Life Services
+
+          <div className="lg:col-span-5 space-y-4">
+            <h4 className="font-bold text-lg text-[#0E2E71] tracking-wide uppercase">
+              Useful Links
+            </h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2.5 text-sm sm:text-base text-slate-600">
+              <div className="flex flex-col gap-2.5">
+                <Link className="hover:text-[#0d9cd4] transition-colors" href="/">
+                  Home
                 </Link>
-                <Link href="/sectors/education">Education</Link>
+                <Link
+                  className="hover:text-[#0d9cd4] transition-colors"
+                  href="/Services"
+                >
+                  Services
+                </Link>
+                <Link
+                  className="hover:text-[#0d9cd4] transition-colors"
+                  href="/clients"
+                >
+                  Clients
+                </Link>
+                <Link
+                  className="hover:text-[#0d9cd4] transition-colors"
+                  href="/Events/eventsAndUpdates"
+                >
+                  Events &amp; Updates
+                </Link>
               </div>
-              <div className="flex flex-col gap-y-2 mt-4 lg:mt-0">
-                <Link href="/sectors/ities">It/Ies</Link>
-                <Link href="/sectors/hospitality">Hospitality</Link>
-                <Link href="/sectors/bankingAndFinance">
-                  Banking And Finance
+              <div className="flex flex-col gap-2.5">
+                <Link
+                  className="hover:text-[#0d9cd4] transition-colors"
+                  href="/Events/awardsAndAchievements"
+                >
+                  Awards &amp; Achievements
                 </Link>
-                <Link href="/Events/eventsAndUpdates">Events And Updates</Link>
-                <Link href="/Events/awardsAndAchievements">
-                  Awards And Achievements
+                <Link
+                  className="hover:text-[#0d9cd4] transition-colors"
+                  href="/aboutus"
+                >
+                  About Us
                 </Link>
-                <Link href="/aboutus">About Us</Link>
-                <Link href="/contactus">Contact Us</Link>
+                <Link
+                  className="hover:text-[#0d9cd4] transition-colors"
+                  href="/contactus"
+                >
+                  Contact Us
+                </Link>
               </div>
-            </div>
-          </div>
-          <div className="flex flex-col ">
-            <h4 className="font-bold text-xl">Contact Info</h4>
-            <div>
-              <p className="flex items-center gap-2">
-                <VscMail />
-                bansienterprise1999@gmail.com
-              </p>
-              <p className="flex items-center gap-2">
-                <TbPhoneCall />
-                +91 7890000076
-              </p>
-              {/* <div>
-                <ul className="flex items-center icons pt-10 gap-6 lg:mt-0">
-                  <li className="scale-150">
-                    <FaFacebook />
-                  </li>
-                  <li className="scale-150">
-                    <FaInstagram />
-                  </li>
-                  <li className="scale-150">
-                    <FaLinkedin />
-                  </li>
-                </ul>
-              </div> */}
             </div>
           </div>
 
-          {/* <div className="flex flex-col gap-y-2">
-            <h4 className="text-xl font-bold">Facebook</h4>
-            <iframe
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61558433937480&tabs=timeline&width=250&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-              width="250"
-              height="300"
-              style={{ border: "none", overflow: "hidden" }}
-              scrolling="no"
-              frameBorder="0"
-              allowFullscreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            ></iframe>
-          </div> */}
+          <div className="lg:col-span-3 space-y-4">
+            <h4 className="font-bold text-lg text-[#0E2E71] tracking-wide uppercase">
+              Contact Info
+            </h4>
+            <div className="space-y-3 text-sm sm:text-base text-slate-600">
+              <a
+                href="mailto:bansienterprise1999@gmail.com"
+                className="flex items-center gap-3 hover:text-[#0d9cd4] transition-colors break-all"
+              >
+                <VscMail className="shrink-0 text-lg text-[#0E2E71]" />
+                <span>bansienterprise1999@gmail.com</span>
+              </a>
+              <a
+                href="tel:+917890000076"
+                className="flex items-center gap-3 hover:text-[#0d9cd4] transition-colors"
+              >
+                <TbPhoneCall className="shrink-0 text-lg text-[#0E2E71]" />
+                <span>+91 7890000076</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="border-t border-gray-700 mt-6 pt-4 text-gray-600 text-xl text-center">
+
+        <div className="border-t border-slate-200 mt-10 pt-6 text-slate-600 text-sm sm:text-base text-center">
           <p>
-            Copyright © 2026 BANSI ENTERPRISES INDIA LIMITED | All Rights
-            Reserved. Powered by <a href="https://festiviya.com" target="_blank" rel="noopener noreferrer" className="hover:underline">festiviya.com</a>
+            Copyright &copy; 2026 BANSI ENTERPRISES INDIA LIMITED | All Rights
+            Reserved.
           </p>
         </div>
       </div>

@@ -1,39 +1,53 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-// import "./Card.css"; // Import the CSS file
 
 const Card = ({ image, title, description }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="col-span-1 p-6 gap-6 rounded-lg">
-      <Image
-        src={image}
-        className="w-full rounded-lg max-h-64 object-cover object-top"
-        width={300}
-        height={300}
-        alt={title}
-      />
-      <h1 className="text-3xl font-normal mt-4 text-[#0C2F73]">{title}</h1>
-      <div
-        className={` text-[#778491] relative text-lg mt-2 transition-all text-justify  duration-500 ${
-          open
-            ? "max-h-full bg-transparent"
-            : "max-h-24 overflow-hidden cardDes"
-        }`}
-      >
-        {description}
+    <article className="bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full">
+      <div className="relative w-full aspect-[16/10] bg-slate-100 overflow-hidden">
+        <Image
+          src={image}
+          className="w-full h-full object-cover object-top transition-transform duration-300 hover:scale-105"
+          width={640}
+          height={400}
+          loading="lazy"
+          decoding="async"
+          alt={title}
+        />
       </div>
-      <button
-        className="bg-[#0C2F73] text-white px-4 py-2 rounded mt-4"
-        onClick={() => setOpen(!open)}
-      >
-        <span className="material-symbols-outlined bg-transparent">
-          {open ? "keyboard_arrow_up" : "keyboard_arrow_down"}
-        </span>
-      </button>
-    </div>
+
+      <div className="p-6 flex flex-col flex-1 justify-between gap-4">
+        <div className="space-y-3">
+          <h3 className="text-xl sm:text-2xl font-bold text-[#0C2F73] leading-snug">
+            {title}
+          </h3>
+          <div
+            className={`text-slate-600 relative text-sm sm:text-base leading-relaxed text-justify whitespace-pre-line transition-all duration-300 ${
+              open ? "max-h-[1200px]" : "max-h-24 overflow-hidden cardDes"
+            }`}
+          >
+            {description}
+          </div>
+        </div>
+
+        <div className="pt-2">
+          <button
+            type="button"
+            className="inline-flex items-center gap-1.5 bg-[#0C2F73] hover:bg-[#0d9cd4] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors duration-200"
+            onClick={() => setOpen((prev) => !prev)}
+            aria-expanded={open}
+          >
+            <span>{open ? "Show Less" : "Read More"}</span>
+            <span className="material-symbols-outlined text-[18px] leading-none">
+              {open ? "keyboard_arrow_up" : "keyboard_arrow_down"}
+            </span>
+          </button>
+        </div>
+      </div>
+    </article>
   );
 };
 

@@ -1,31 +1,31 @@
 import Image from "next/image";
 import React from "react";
 
-const Awards = ({ img, Title, Disc, customClass }) => {
+const Awards = ({ img, Title, Disc, customClass = "" }) => {
   return (
-    <div className={`${customClass} w-full`}>
-      <div className="w-full bg-transparent flex justify-center">
+    <article className={`w-full flex flex-col sm:flex-row items-center gap-6 ${customClass}`}>
+      <div className="w-36 shrink-0 flex justify-center">
         <Image
           src={img}
           alt={Title}
-          width={300}
-          height={300}
-          className="rounded-lg md:w-full w-1/2 object-cover mix-blend-multiply"
+          width={200}
+          height={200}
+          className="rounded-lg w-full h-auto object-contain"
         />
       </div>
-      <div className="w-full bg-transparent  mt-4 md:mt-0 md:pl-8 text-center md:text-left">
-        <h2 className="text-base font-bold mb-4 bg-transparent">{Title}</h2>
+      <div className="flex-1 text-center sm:text-left space-y-2">
+        <h2 className="text-lg font-bold text-[#0E2E71]">{Title}</h2>
         {Array.isArray(Disc) ? (
           Disc.map((item, index) => (
-            <p key={index} className="text-sm mb-2 bg-transparent">
+            <p key={index} className="text-sm text-slate-600">
               {item}
             </p>
           ))
         ) : (
-          <p className="text-sm text-gray-500 bg-transparent">{Disc}</p>
+          <p className="text-sm text-slate-500">{Disc}</p>
         )}
       </div>
-    </div>
+    </article>
   );
 };
 

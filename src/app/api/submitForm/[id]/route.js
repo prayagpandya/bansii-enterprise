@@ -24,12 +24,11 @@ const credentials = {
 // Create a new instance of Google Drive API
 const drive = google.drive({
   version: "v3",
-  auth: new google.auth.JWT(
-    credentials.client_email,
-    null,
-    credentials.private_key,
-    ["https://www.googleapis.com/auth/drive"]
-  ),
+  auth: new google.auth.JWT({
+    email: credentials.client_email,
+    key: credentials.private_key,
+    scopes: ["https://www.googleapis.com/auth/drive"],
+  }),
 });
 
 export async function DELETE(req, { params }) {

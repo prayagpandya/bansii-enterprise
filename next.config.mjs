@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    unoptimized: true,
+  },
+  experimental: {
+    optimizePackageImports: ["react-icons"],
+  },
+};
 
 export default nextConfig;

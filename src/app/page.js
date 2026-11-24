@@ -1,10 +1,6 @@
-import { lazy } from "react";
+import React from "react";
+import Home from "@/components/pages/home/Home";
 
-const Home = lazy(() => import("@/components/pages/home/Home"));
 export default function page() {
-  return (
-    <>
-      <Home data-scroll data-scroll-speed="2" />
-    </>
-  );
+  return <Home />;
 }

@@ -1,40 +1,42 @@
-import RightCard from "@/components/compnent/dynamicCards/rightcard/Rightcard";
 import React from "react";
-import mission from "@/assets/About/mission.webp";
-import vision from "@/assets/About/vision.webp";
-import purpose from "@/assets/About/purpose.webp";
+import missionIcon from "@/assets/About/icon-mission.webp";
+import visionIcon from "@/assets/About/icon-vision.webp";
+import valuesIcon from "@/assets/About/icon-values.webp";
 import RightCardNoLink from "@/components/compnent/dynamicCards/rightcard/RightcardSector";
 import LeftCardNoLink from "@/components/compnent/dynamicCards/LeftCard/LeftCardNoLink";
+
 const Mission = () => {
   return (
-    <div>
-      <h5 className="text-3xl text-[#0E2E71] font-bold text-center mt-14">
-        Our Mission Vision And Purpose
-      </h5>
+    <section className="py-8 md:py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4">
+        <span className="inline-block text-xs sm:text-sm font-bold uppercase tracking-widest text-[#0d9cd4]">
+          Core Values
+        </span>
+        <h2 className="text-3xl sm:text-4xl text-[#0E2E71] font-bold mt-2">
+          Our Mission, Vision and Values
+        </h2>
+        <div className="w-20 h-1 bg-[#0d9cd4] mx-auto mt-3 rounded-full" />
+      </div>
+
       <RightCardNoLink
-        img={mission}
-        description={
-          "To Help Our Customers Have Productive, Safer, And Healthier Environments through a Robust Range of Cleaning Services, Industry-leading Standards, And Sustainable Business Practices"
-        }
-        title={"Our Mission"}
+        img={missionIcon}
+        description="To help our customers build productive, safer, and healthier environments through a robust range of cleaning services, industry-leading standards, and sustainable business practices."
+        title="Our Mission"
+        containMedia
       />
       <LeftCardNoLink
-        clsimgdiv={"bg-transperent bg-cover"}
-        img={vision}
-        description={
-          "To Provide Services at 1000+ Government Clients through India by 2040 with Turnover of 1000 Cr."
-        }
-        title={"Our Vision"}
+        img={visionIcon}
+        description="To provide services to 1,000+ government clients across India by 2040 with a turnover of ₹1,000 Cr."
+        title="Our Vision"
+        containMedia
       />
       <RightCardNoLink
-        clsimgdiv={"bg-transperent bg-cover"}
-        img={purpose}
-        description={
-          "We place immense importance on creating a positive difference in the lives of people, planet and the places we serve by putting our Humanity Ahead approach. This is our core value and purpose that drives our actions"
-        }
-        title={"Our Purpose"}
+        img={valuesIcon}
+        description="We place immense importance on creating a positive difference in the lives of people, the planet, and the places we serve through our Humanity Ahead approach—the core values and purpose that drive every action."
+        title="Our Values"
+        containMedia
       />
-    </div>
+    </section>
   );
 };
 

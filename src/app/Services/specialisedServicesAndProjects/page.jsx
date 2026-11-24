@@ -1,16 +1,8 @@
-const SpecialisedServicesAndProjects = lazy(() =>
-  import(
-    "@/components/pages/services/specialisedServicesAndProjects/specialisedServicesAndProject"
-  )
-);
-import React, { lazy } from "react";
+import React from "react";
+import SpecialisedServicesAndProjects from "@/components/pages/services/specialisedServicesAndProjects/specialisedServicesAndProject";
 
 const page = () => {
-  return (
-    <>
-      <SpecialisedServicesAndProjects />
-    </>
-  );
+  return <SpecialisedServicesAndProjects />;
 };
 
 export default page;

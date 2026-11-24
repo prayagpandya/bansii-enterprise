@@ -61,7 +61,8 @@ export function AdminPage() {
   }, []);
 
   return (
-    <div className="overflow-x-auto">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
+      <div className="overflow-x-auto bg-white rounded-2xl border border-slate-200 shadow-sm p-4">
       <Table hoverable>
         <Table.Head>
           <Table.HeadCell>Name</Table.HeadCell>
@@ -95,6 +96,7 @@ export function AdminPage() {
           ))}
         </Table.Body>
       </Table>
+      </div>
     </div>
   );
 }

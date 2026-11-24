@@ -1,23 +1,23 @@
 import React from "react";
+import visionImg from "@/assets/About/vision.webp";
 
 const Vision = () => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="flip">
         <div
           className="front"
           style={{
-            backgroundImage:
-              "url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)",
+            backgroundImage: `url(${visionImg.src})`,
           }}
         >
-          <h1 className="text-shadow">MOUNTAIN</h1>
+          <h1 className="text-shadow">VISION</h1>
         </div>
         <div className="back">
-          <h2>Angular</h2>
+          <h2>Bansi Enterprise</h2>
           <p>
-            Good tools make application development quicker and easier to
-            maintain than if you did everything by hand..
+            Delivering integrated facility management and reliable manpower
+            solutions across India.
           </p>
         </div>
       </div>

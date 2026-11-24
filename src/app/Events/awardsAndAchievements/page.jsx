@@ -3,6 +3,7 @@ import React from 'react';
 import Accreditions from '@/components/compnent/awardsCard/Accreditions/Accreditions';
 import AwardsCard from '@/components/compnent/awardsCard/AwardCard/AwardsCard';
 import ContactHero from '@/components/compnent/Contact/sector private/ContactHero';
+import Scoresec from '@/components/pages/home/Scoresec/Scoresec';
 import Footer from '@/components/compnent/Footer/Footer';
 
 import iso9001Img from '../../../assets/Awards/Awards/01.webp';
@@ -52,12 +53,12 @@ const accreditions = [
   {
     img: iso9001Img,
     Title: 'ISO 9001:2015 (QUALITY MANAGEMENT SYSTEM)',
-    Disc: 'Bansi Enterprise believes in keep clean everywhere and it maintain total quality management',
+    Disc: 'Bansi Enterprise believes in keeping every space clean and maintaining total quality management.',
   },
   {
     img: iso45001Img,
     Title: 'ISO 45001:2018 (OCCUPATIONAL HEALTH & SAFETY MANAGEMENT SYSTEM)',
-    Disc: 'Bansi Enterprise occupies best safety majors for their employees , it includes all safety policies .',
+    Disc: 'Bansi Enterprise implements strict safety measures for its employees backed by comprehensive safety policies.',
   },
   {
     img: iso37001Img,
@@ -67,7 +68,7 @@ const accreditions = [
   {
     img: iso14001Img,
     Title: 'ISO 14001:2015 (ENVIRONMENT MANAGEMENT SYSTEM)',
-    Disc: 'Bansi Enterprise Protects the environment &  adopt clean technologies which reduce the pollution',
+    Disc: 'Bansi Enterprise protects the environment and adopts clean technologies that reduce pollution.',
   },
   {
     img: iso26000Img,
@@ -97,6 +98,7 @@ const Page = () => {
           Affiliations
         </h1> */}
         {/* <AwardsCard awards={awardsData2} /> */}
+        <Scoresec />
         <Footer />
       </div>
     </div>

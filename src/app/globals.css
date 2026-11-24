@@ -1,33 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
-  box-sizing: border-box;
-  margin: 0%;
-  padding: 0%;
-  font-family: var(--font-roboto), "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #ffffff;
-  ::-webkit-scrollbar {
-    display: none;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    overflow-x: clip;
+  }
+
+  html,
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffff;
+    color: #1e293b;
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e8f1ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0d9cd4 0%, #0E2E71 100%);
+  border-radius: 9999px;
+  border: 2px solid #e8f1ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #38bdf8 0%, #0d9cd4 50%, #0a2357 100%);
+}
+
+::-webkit-scrollbar-corner {
+  background: #e8f1ff;
+}
+
+@supports (-moz-appearance: none) {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #0E2E71 #e8f1ff;
+  }
+}
+
 nav {
-  letter-spacing: 1px;
+  letter-spacing: 0.04em;
 }
-body {
-  font-family: var(--font-roboto), "Roboto", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  overflow-x: hidden;
-}
+
 .Toastify__toast-body > div:last-child {
   background-color: transparent;
 }
+
 .Toastify__toast-body {
   background-color: transparent;
 }
+
 .cardDes {
   position: relative;
 }
@@ -38,9 +74,9 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 68px; /* Adjust the height as needed */
+  height: 48px;
   background: linear-gradient(rgba(255, 255, 255, 0), #ffffff);
-  pointer-events: none; /* Ensure it doesn't interfere with clicks */
+  pointer-events: none;
 }
 
 .cardDesNo::after {
@@ -49,7 +85,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 110px; /* Adjust the height as needed */
+  height: 96px;
   background: transparent;
-  pointer-events: none; /* Ensure it doesn't interfere with clicks */
+  pointer-events: none;
 }

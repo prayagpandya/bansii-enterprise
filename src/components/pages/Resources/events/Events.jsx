@@ -39,18 +39,15 @@ const Events = () => {
   }));
 
   return (
-    <>
-      <ContactHero img={img1} title={"Events And Updates"} />
-      <div>
-        <GridCards cardData={cardData} />
-      </div>
+    <div className="overflow-x-clip">
+      <ContactHero img={img1} title="Events And Updates" />
+      <GridCards cardData={cardData} />
       <ScoreCard
-        title="Manufacturing and Industrial in numbers"
+        title="About People, Places and Planet"
         data={scoreCardData1}
-        ClassCustom="mt-20"
       />
       <Footer />
-    </>
+    </div>
   );
 };
 
